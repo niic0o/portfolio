@@ -50,9 +50,6 @@ body {
     justify-content: center;
 }
 
-.main__strong {
-  color: #22d4fd;
-}
 
 .main {
   display: flex;
@@ -105,6 +102,21 @@ body {
   text-align: justify;
   line-height: 1.5;
 }
+.main__text__strong{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.main__text__strong--A{
+  color: #FFFF00;
+}
+.main__text__strong--B{
+  color: #FFA500;
+}
+
+.main__text__strong--C{
+color: #259dff
+}
 
 .main__title--second {
   font-size: 14px;
@@ -112,6 +124,11 @@ body {
   text-align: center;
   width: 60%;
 }
+
+.main__strong {
+  color: #22d4fd;
+}
+
 
 .main__buttons {
   display: flex;
