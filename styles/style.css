@@ -18,19 +18,19 @@ body {
   font-family: "Krona One", sans-serif;
 }
 
-.header{
+.header {
   padding: 2vw 0vw 8vw 2vw;
   box-sizing: content-box;
 }
 
 @media (min-width: 480px) {
-  .header{
-      padding: 2vw 0vw 4vw 22vw;
-      box-sizing: content-box;
+  .header {
+    padding: 2vw 0vw 4vw 22vw;
+    box-sizing: content-box;
   }
 }
 
-.header__menu{
+.header__menu {
   background-color: black;
   display: flex;
   flex-wrap: wrap;
@@ -39,17 +39,16 @@ body {
   gap: 0.5vw;
 }
 
-.header__menu__link{
-    color:#22d4fd;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    width: 110px;
-    font-size: 1em;
-    font-weight: 600;
-    text-align: center;
-    justify-content: center;
+.header__menu__link {
+  color: #22d4fd;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  width: 110px;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
 }
-
 
 .main {
   display: flex;
@@ -65,7 +64,8 @@ body {
   padding-bottom: 2rem; /*agrega espacio por debajo entre border y content*/
 }
 
-.main__content, .main__cv {
+.main__content,
+.main__cv {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -80,7 +80,7 @@ body {
 }
 
 /* curriculum */
-.main__cv{
+.main__cv {
   width: auto;
   max-width: 80vw;
   margin: 0px 10px 0px;
@@ -102,20 +102,26 @@ body {
   text-align: justify;
   line-height: 1.5;
 }
-.main__text__strong{
+.main__text__strong {
   font-size: 1.2em;
   font-weight: bold;
   margin-right: 5px;
+  text-decoration: none;
 }
-.main__text__strong--A{
-  color: #FFFF00;
-}
-.main__text__strong--B{
-  color: #FFA500;
+.main__text__strong--A {
+  color: #ffff00;
 }
 
-.main__text__strong--C{
-color: #259dff
+.main__text__strong--B {
+  color: #ffa500;
+}
+
+.main__text__strong--C {
+  color: #259dff;
+}
+
+.main__text__strong--hover:hover {
+  color: #22f6fd;
 }
 
 .main__title--second {
@@ -129,6 +135,10 @@ color: #259dff
   color: #22d4fd;
 }
 
+.cv__buttons {
+  display: flex;
+  gap: 1rem;
+}
 
 .main__buttons {
   display: flex;
@@ -148,7 +158,7 @@ color: #259dff
   text-decoration: none;
   color: white;
 }
-.button__link:hover{
+.button__link:hover {
   color: #22d4fd;
 }
 .button {
@@ -182,7 +192,7 @@ color: #259dff
   object-fit: contain;
 }
 
-.main__img--nico{
+.main__img--nico {
   width: 100%;
   height: 100%;
   border: 2px solid #22d4fd;
@@ -238,4 +248,3 @@ color: #259dff
   background-color: #22d4fd;
   color: black;
 }
-
