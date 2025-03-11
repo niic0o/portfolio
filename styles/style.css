@@ -152,6 +152,9 @@ hr {
 
 .main__buttons--cv {
   flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .main__buttons {
