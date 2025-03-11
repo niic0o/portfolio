@@ -18,6 +18,16 @@ body {
   font-family: "Krona One", sans-serif;
 }
 
+/*linea separadora*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #22d4fd;
+  margin: 1em 0;
+  padding: 0;
+}
+
 .header {
   padding: 2vw 0vw 8vw 2vw;
   box-sizing: content-box;
@@ -122,7 +132,7 @@ body {
 }
 
 .main__text__strong--C {
-  color: #259dff;
+  color: #cc5ffe;
 }
 
 .main__text__strong--hover:hover {
@@ -167,6 +177,7 @@ body {
 .button {
   border-color: #22d4fd;
   background-color: transparent;
+  border-style: solid;
   border-radius: 11px;
   padding: 0.75rem 0.6rem;
   cursor: pointer;
@@ -179,7 +190,7 @@ body {
 }
 
 .button--cv{
-  width: 200px;
+  width: 220px;
 }
 
 .button:hover {
@@ -266,4 +277,10 @@ body {
 }
 .button__icon.cafe{
   background-image: url("../assets/cafe.png");
+}
+
+.button.button--cv.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
