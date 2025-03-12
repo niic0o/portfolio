@@ -8,7 +8,8 @@ M - Modificador (Variante de un bloque o elemento). Ej: <h1 class="box__title--s
 
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*original colors
+/*original colors*/
+/*
 :root{
   --color-back-primary: #000000;
   --color-back-secondary: #191818;
@@ -22,7 +23,7 @@ M - Modificador (Variante de un bloque o elemento). Ej: <h1 class="box__title--s
   --font-secondary: Krona One, sans-serif;
 }*/
 
-/* Opcion tema oscuro
+/* Opcion tema oscuro oceanico*/
 :root{
   --color-back-primary: #0B132B;
   --color-back-secondary: #1C2541;
@@ -35,10 +36,10 @@ M - Modificador (Variante de un bloque o elemento). Ej: <h1 class="box__title--s
   --font-primary: Montserrat, sans-serif;
   --font-secondary: Krona One, sans-serif;
   }
-*/
+
 
 /* Opcion tema oscuro violeta*/
-
+/*
 :root{
   --color-back-primary: #10002B;
   --color-back-secondary: #240046;
@@ -51,6 +52,7 @@ M - Modificador (Variante de un bloque o elemento). Ej: <h1 class="box__title--s
   --font-primary: Montserrat, sans-serif;
   --font-secondary: Krona One, sans-serif;
 }
+*/
 
 
 * {
