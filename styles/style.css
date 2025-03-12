@@ -8,14 +8,59 @@ M - Modificador (Variante de un bloque o elemento). Ej: <h1 class="box__title--s
 
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/*original colors
+:root{
+  --color-back-primary: #000000;
+  --color-back-secondary: #191818;
+  --color-back-terciary: #272727;
+  --color-primary: #FFFFFF;
+  --color-secondary: #22d4fd;
+  --color-terciary: #ffff00;
+  --color-quaternary: #FFC107;
+  --color-quinary: #cc5ffe;
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Krona One, sans-serif;
+}*/
+
+/* Opcion tema oscuro
+:root{
+  --color-back-primary: #0B132B;
+  --color-back-secondary: #1C2541;
+  --color-back-terciary: #3A506B;
+  --color-primary: #FFFFFF;
+  --color-secondary: #6FFFE9;
+  --color-terciary: #ffff00;
+  --color-quaternary: #FFC107;
+  --color-quinary: #cc5ffe;
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Krona One, sans-serif;
+  }
+*/
+
+/* Opcion tema oscuro violeta*/
+
+:root{
+  --color-back-primary: #10002B;
+  --color-back-secondary: #240046;
+  --color-back-terciary: #5A189A;
+  --color-primary: #FFFFFF;
+  --color-secondary: #E0AAFF;
+  --color-terciary: #ffff00;
+  --color-quaternary: #FFC107;
+  --color-quinary: #4a96ff;
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Krona One, sans-serif;
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
-  color: white;
-  font-family: "Krona One", sans-serif;
+  background-color: var(--color-back-primary);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
 }
 
 /*linea separadora*/
@@ -23,7 +68,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #22d4fd;
+  border-top: 1px solid var(--color-secondary);
   margin: 1em 0;
   padding: 0;
 }
@@ -31,7 +76,7 @@ hr {
 .header {
   padding: 2vw 0vw 8vw 2vw;
   box-sizing: content-box;
-  background-color: #191818;
+  background-color: var(--color-back-secondary);
 }
 
 @media (min-width: 480px) {
@@ -42,7 +87,7 @@ hr {
 }
 
 .header__menu {
-  background-color: #191818;
+  background-color: var(--color-back-secondary);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start; /* alinear elementos al inicio */
@@ -51,8 +96,8 @@ hr {
 }
 
 .header__menu__link {
-  color: #22d4fd;
-  font-family: "Montserrat", sans-serif;
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
   text-decoration: none;
   width: 110px;
   font-size: 1em;
@@ -62,8 +107,7 @@ hr {
 }
 
 .header__menu__link:hover{
-  color: black;
-  background-color: #22d4fd;
+  color: var(--color-primary);
   cursor: pointer;
 }
 
@@ -76,7 +120,7 @@ hr {
   max-width: 100vw;
   /*min-height: 90vh;*/
   box-sizing: content-box;
-  background-color: black;
+  background-color: var(--color-back-primary);
   border-style: none;
   padding-bottom: 2rem; /*agrega espacio por debajo entre border y content*/
 }
@@ -103,7 +147,7 @@ hr {
   max-width: 80vw;
   margin: 0px 10px 0px;
   border-style: solid;
-  border-color: #22d4fd;
+  border-color: var(--color-secondary);
   background-color: transparent;
   border-radius: 11px;
   padding: 0.75rem 0.6rem;
@@ -114,7 +158,7 @@ hr {
   font-weight: lighter;
 }
 .main__text {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-primary);
   font-size: 16px;
   margin-bottom: 1rem;
   text-align: justify;
@@ -131,19 +175,19 @@ hr {
   text-decoration: none;
 }
 .main__text__strong--A {
-  color: #ffff00;
+  color: var(--color-terciary);
 }
 
 .main__text__strong--B {
-  color: #ffa500;
+  color: var(--color-quaternary);
 }
 
 .main__text__strong--C {
-  color: #cc5ffe;
+  color: var(--color-quinary);
 }
 
 .main__text__strong--hover:hover {
-  color: #22f6fd;
+  color: var(--color-secondary);
 }
 
 .main__title--second {
@@ -154,7 +198,7 @@ hr {
 }
 
 .main__strong {
-  color: #22d4fd;
+  color: var(--color-secondary);
 }
 
 .main__buttons--cv {
@@ -175,17 +219,17 @@ hr {
 }
 
 .button__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 600; /*semiBold*/
   font-size: 15px;
   text-decoration: none;
-  color: white;
+  color: var(--color-primary);
 }
 .button__link:hover {
-  color: #22d4fd;
+  color: var(--color-secondary);
 }
 .button {
-  border-color: #22d4fd;
+  border-color: var(--color-secondary);
   background-color: transparent;
   border-style: solid;
   border-radius: 11px;
@@ -204,14 +248,14 @@ hr {
 }
 
 .button:hover {
-  background-color: #272727;
+  background-color: var(--color-primary);
 }
 .button:hover .button__link {
-  color: #22d4fd;
+  color: var(--color-back-terciary);
 }
 
 .main__text--soyAna {
-  color: coral;
+  color: var(--color-quaternary);
 }
 
 .main__img--ana {
@@ -223,7 +267,7 @@ hr {
 .main__img--nico {
   width: 100%;
   height: 100%;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--color-secondary);
   object-fit: contain;
 }
 
@@ -252,11 +296,11 @@ hr {
   bottom: 0;
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 15px;
-  background-color: #22d4fd;
-  color: black;
+  background-color: var(--color-secondary);
+  color: var(--color-back-primary);
 }
 /*iconos*/
 .button__icon {
