@@ -68,9 +68,9 @@ body {
 /*linea separadora*/
 hr {
   display: block;
-  height: 1px;
+  height: 0.1rem;
   border: 0;
-  border-top: 1px solid var(--color-secondary);
+  border-top: 0.1rem solid var(--color-secondary);
   margin: 1em 0;
   padding: 0;
 }
@@ -118,13 +118,13 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   max-width: 100vw;
   /*min-height: 90vh;*/
   box-sizing: content-box;
   background-color: var(--color-back-primary);
   border-style: none;
-  padding-bottom: 2rem; /*agrega espacio por debajo entre border y content*/
+  padding-bottom: 1rem; /*agrega espacio por debajo entre border y content*/
 }
 
 .main__content,
@@ -156,16 +156,20 @@ hr {
 }
 
 .main__title {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: lighter;
 }
 .main__text {
   font-family: var(--font-primary);
-  font-size: 16px;
-  margin-bottom: 1rem;
-  text-align: justify;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
   text-justify: auto;
   line-height: 1.5;
+}
+
+.main__text--justify{
+  text-align: justify;
 }
 
 .main__text.main__text--listar{
@@ -194,7 +198,7 @@ hr {
 }
 
 .main__title--second {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: lighter;
   text-align: center;
   width: 60%;
@@ -208,7 +212,7 @@ hr {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .main__buttons {
@@ -218,13 +222,13 @@ hr {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .button__link {
   font-family: var(--font-primary);
   font-weight: 600; /*semiBold*/
-  font-size: 15px;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--color-primary);
 }
@@ -239,7 +243,7 @@ hr {
   padding: 0.75rem 0.6rem;
   cursor: pointer;
   width: 60%;
-  gap: 14px;
+  gap: 0.9rem;
   justify-content: center; /* Alinea los elementos en el centro horizontal */
   align-items: center; /* Alinea los elementos en el centro vertical */
   display: flex;
@@ -309,9 +313,9 @@ hr {
 }
 /*iconos*/
 .button__icon {
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
+  background-size: 1.5rem 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: inline-block;
 }
 
