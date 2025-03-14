@@ -63,6 +63,7 @@ body {
   background-color: var(--color-back-primary);
   color: var(--color-primary);
   font-family: var(--font-secondary);
+  margin-top: 0.3rem;
 }
 
 /*linea separadora*/
@@ -76,14 +77,14 @@ hr {
 }
 
 .header {
-  padding: 1vw 0vw 4vw 2vw;
+  padding: 1vw 0vw 2vw 22vw;
   box-sizing: content-box;
   background-color: var(--color-back-secondary);
 }
 
-@media (min-width: 480px) {
+@media (max-width: 420px){
   .header {
-    padding: 1vw 0vw 2vw 22vw;
+    display: flex;
     box-sizing: content-box;
   }
 }
@@ -118,13 +119,27 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   max-width: 100vw;
   /*min-height: 90vh;*/
   box-sizing: content-box;
   background-color: var(--color-back-primary);
   border-style: none;
   padding-bottom: 1rem; /*agrega espacio por debajo entre border y content*/
+  margin-top: 1rem;
+}
+
+.cv__main{
+ flex-direction: row; 
+}
+
+@media (max-width: 720px){
+  .main {
+    flex-direction: column-reverse;
+  }
+  .cv__main{
+    flex-direction: row;
+  }
 }
 
 .main__content,
@@ -134,7 +149,7 @@ hr {
   flex-wrap: wrap;
   width: 30vw;
   max-width: 30vw;
-  min-width: 340px;
+  min-width: 320px;
   min-height: 70px;
   text-align: justify;
   justify-content: center;
@@ -280,14 +295,24 @@ hr {
   object-fit: contain;
 }
 
-.main__image-container {
+.main__image--container {
   width: 20vw;
   max-width: 30vw;
   min-width: 250px;
   min-height: 70px;
+  align-items: flex-start;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+/*Con esto subo la imagen sin afectar el wrap del flexbos al bajar la resolucion*/
+@media (min-width: 720px) {
+  .main__image--container {
+    position: relative;
+    top: -100px;
+  }
 }
 
 .section__box {
