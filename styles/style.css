@@ -77,18 +77,23 @@ hr {
 }
 
 .header {
-  padding: 1vw 0vw 2vw 22vw;
-  box-sizing: content-box;
+  padding: 1vw 0vw 2vw 11vw;
   background-color: var(--color-back-secondary);
 }
 
 @media (max-width: 420px){
   .header {
     display: flex;
-    box-sizing: content-box;
+    margin-left: -1.5rem;
   }
+  
 }
 
+@media (min-width: 900px){
+  .header {
+    padding: 1vw 0vw 2vw 22vw;
+  }
+}
 .header__menu {
   background-color: var(--color-back-secondary);
   display: flex;
